@@ -16,7 +16,6 @@ export default function CosmicBackground() {
   const [stars, setStars] = useState<Star[]>([]);
 
   useEffect(() => {
-    // Client-only: avoids SSR hydration mismatch
     setStars(
       Array.from({ length: 60 }, (_, i) => ({
         id: i,
@@ -32,15 +31,12 @@ export default function CosmicBackground() {
 
   return (
     <>
-      {/* Deep space radial gradient */}
       <div
         className="fixed inset-0 pointer-events-none z-0"
         style={{
           background: "radial-gradient(circle at 50% 0%, #1f1442 0%, #0a071b 72%)",
         }}
       />
-
-      {/* Ambient aura blobs */}
       <div className="fixed -top-40 -left-40 w-96 h-96 rounded-full bg-[#303F9F]/20 blur-3xl pointer-events-none animate-aura" />
       <div
         className="fixed top-1/3 -right-40 w-96 h-96 rounded-full bg-[#8E24AA]/20 blur-3xl pointer-events-none animate-aura"

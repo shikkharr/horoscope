@@ -7,7 +7,6 @@ import Navbar from "@/components/Navbar";
 import { fetchDailyHoroscope } from "@/lib/horoscope";
 
 
-// Minimal shape — only what the homepage cards need
 interface LuckyInfo {
   luckyColor: string;
   luckyNumber: string;

@@ -30,10 +30,10 @@ export default function RootLayout({
       lang="en"
       className={`${spaceGrotesk.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="relative min-h-full flex flex-col bg-[#0a071b] text-slate-100 font-sans selection:bg-[#8E24AA] selection:text-white">
-        {/* Global cosmic background — stars, glow, aura blobs */}
+      <body className="relative min-h-full flex flex-col bg-[#0a071b] text-slate-100 font-sans selection:bg-[#8E24AA] selection:text-white" suppressHydrationWarning>
+        {/* background — stars, glow, aura blobs */}
         <CosmicBackground />
-        {/* Page content sits above the background */}
+        {/* Page content */}
         <div className="relative z-10 flex flex-col min-h-screen">
           {children}
         </div>

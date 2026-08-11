@@ -1,4 +1,3 @@
-// app/horoscope/[slug]/page.tsx
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getSignBySlug, zodiacSigns } from "@/data/zodiac";
@@ -72,15 +71,15 @@ export default async function HoroscopeDetailPage({
 
   return (
     <div className="min-h-screen w-full text-slate-100 pb-20 md:pb-10">
-      {/* 1. Global Sticky Top Navbar */}
+      {/* Global Sticky Top Navbar */}
       <Navbar />
 
-      {/* 2. MacOS DOCK EFFECT Sign Switcher Strip */}
+      {/* MacOS DOCK EFFECT Sign Switcher Strip */}
       <SignSwitcherDock currentSlug={sign.slug} />
 
-      {/* Main Content Layout Container (Desktop 2-column: Left Main, Right Sidebar) */}
+      {/* Main Content Container*/}
       <main className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
-        {/* Navigation Breadcrumb */}
+        {/* Navigation */}
         <div className="mb-4">
           <Link
             href="/horoscope"
@@ -96,7 +95,7 @@ export default async function HoroscopeDetailPage({
             {/* 3. Hero Horoscope Card with Category Tabs */}
             <HeroHoroscopeCard sign={sign} apiPrediction={apiPrediction} />
 
-            {/* 4. "Today's Insights" Chip Row */}
+            {/* "Today's Insights"*/}
             <TodaysInsightsRow
               sign={sign}
               luckyNumber={luckyNumber}

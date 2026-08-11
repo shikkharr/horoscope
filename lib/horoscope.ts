@@ -1,5 +1,3 @@
-// lib/horoscope.ts
-
 export type HoroscopeData = {
   prediction: string;   // personal / general
   love: string;         // emotions field
@@ -29,7 +27,7 @@ export async function fetchDailyHoroscope(signName: string): Promise<HoroscopeDa
   const apiToken = process.env.DIVINE_API_TOKEN || "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2RpdmluZWFwaS5jb20vc2lnbnVwIiwiaWF0IjoxNzg2Mjk4NDUyLCJuYmYiOjE3ODYyOTg0NTIsImp0aSI6ImpxYWNXeDZwTE1pYTV1dkEiLCJzdWIiOiI1NjE4IiwicHJ2IjoiZTZlNjRiYjBiNjEyNmQ3M2M2Yjk3YWZjM2I0NjRkOTg1ZjQ2YzlkNyJ9.ANMhEwfbGnDGgLo1-VkpFd9KQI-RSD_MmbasxRTPv0g";
   const apiKey = process.env.DIVINE_API_KEY || "505108f9659f620040c9a96ee973f6d3";
 
-  // Ensure sign name has first letter capital
+  // Ensure zodiac sign name has first letter capital
   const formattedSign = signName.charAt(0).toUpperCase() + signName.slice(1).toLowerCase();
 
   const form = new FormData();

@@ -1,5 +1,3 @@
-// data/zodiac.ts
-
 export type ZodiacElement = "🔥" | "🌍" | "💨" | "🌊";
 
 export type ZodiacSign = {

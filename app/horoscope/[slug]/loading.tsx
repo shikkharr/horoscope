@@ -1,4 +1,3 @@
-// app/horoscope/[slug]/loading.tsx
 export default function Loading() {
   return (
     <div className="relative min-h-screen w-full bg-[#0a071b] text-slate-100 px-4 py-12 sm:py-16">

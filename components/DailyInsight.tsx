@@ -97,7 +97,7 @@ export default function TodaysInsightsRow({
           </div>
         </div>
 
-        {/* Chip 3: Lucky Number Box */}
+        {/*  Lucky Number Box */}
         <div className="rounded-2xl glass-card p-4 flex items-center gap-3.5 border border-[#8E24AA]/30">
           <div className="w-10 h-10 rounded-xl bg-[#303F9F]/30 border border-[#303F9F]/60 flex items-center justify-center text-[#FFD700] font-bold text-base">
             {displayNumber}

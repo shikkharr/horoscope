@@ -1,4 +1,3 @@
-// app/horoscope/[slug]/error.tsx
 "use client";
 
 import Link from "next/link";
@@ -10,7 +9,7 @@ export default function Error({ reset }: { error: Error; reset: () => void }) {
         <div className="text-4xl mb-4 text-[#FFD700]">✨</div>
         <h2 className="text-xl font-light text-white mb-2">Unable to Load Horoscope</h2>
         <p className="text-xs text-slate-300 font-light mb-6 leading-relaxed">
-          The cosmic connection was temporarily interrupted. Please try again later.
+          The connection was temporarily interrupted. Please try again later.
         </p>
         <div className="flex items-center justify-center gap-3">
           <button

@@ -1,5 +1,5 @@
 "use client";
-// app/error.tsx — catches runtime errors in the app shell
+
 import { useEffect } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
